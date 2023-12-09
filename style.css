@@ -27,18 +27,6 @@ h1 {
   padding: 150px 0;
 }
 
-.content-section::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 100px;
-  width: 350px;
-  height: 1px;
-  background-image: url('logo-b.png');
-  background-size: cover;
-  z-index: 10;
-}
-
 .custom-button {
   background-color: #000214;
   color: #fff;
@@ -68,11 +56,6 @@ h1 {
   .content-section {
     background-image: url('mobile-hero.png');
     padding-top: 660px;
-  }
-
-  .content-section::before {
-    padding-top: 200px;
-    opacity: 0.2;
   }
 }
 
