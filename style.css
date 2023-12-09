@@ -30,9 +30,9 @@ h1 {
 @media (max-width: 768px) {
   .content-section {
     background-image: url('mobile-hero.png');
-    padding-top: 680px;
+    padding-top: 600px;
     background-size: cover;
-    background-position: center;
+    background-position: center -210px;
   }
 }
 
