@@ -1,0 +1,99 @@
+body {
+  background-color: #000214;
+}
+/* Estilos padrão para p e h1 */
+p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000214;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-decoration: dashed;
+  text-shadow: #fff;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000214;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  stroke: #ffff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5246dc, 0 0 40px #5246dc,
+    0 0 50px #5246dc, 0 0 60px #5246dc, 0 0 70px #5246dc;
+}
+
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.content-section {
+  background-image: url('hero1.png'); /* Caminho para sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.content-section::before {
+  content: '';
+  position: absolute;
+  top: 650px;
+  left: 500px; /* Ajuste essa propriedade para posicionar o logo conforme necessário */
+  width: 200px; /* Largura do logo */
+  height: 130px; /* Altura do logo */
+  background-image: url('logo-b.png'); /* Caminho para o logo */
+  background-size: cover;
+  z-index: 10; /* Isso garante que o logo fique acima do resto do conteúdo */
+}
+@media (max-width: 768px) {
+  .content-section::before {
+    top: 480px;
+    left: 150px;
+    width: 200px;
+    height: 130px;
+  }
+}
+
+.custom-button {
+  background-color: #000214;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  color: #000214;
+  border: 1px solid #000214;
+}
+
+@keyframes brilho {
+  0% {
+    color: #5246dc;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5246dc,
+      0 0 40px #5246dc, 0 0 50px #5246dc, 0 0 60px #5246dc, 0 0 70px #5246dc;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #5246dc, 0 0 40px #5246dc,
+      0 0 50px #5246dc, 0 0 60px #5246dc, 0 0 70px #5246dc, 0 0 80px #5246dc;
+  }
+  100% {
+    color: #5246dc;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5246dc,
+      0 0 40px #5246dc, 0 0 50px #5246dc, 0 0 60px #5246dc, 0 0 70px #5246dc;
+  }
+}
+
+.titulo-brilhante {
+  animation: brilho 5s linear infinite;
+}
