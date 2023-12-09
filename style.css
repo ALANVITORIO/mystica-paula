@@ -55,7 +55,8 @@ h1 {
 
   .content-section {
     background-image: url('mobile-hero.png');
-    padding-top: 660px;
+    padding-top: 680px;
+    background-position: cover;
   }
 }
 
