@@ -1,7 +1,7 @@
 body {
   background-color: #000214;
 }
-/* Estilos padrão para p e h1 */
+
 p {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #000214;
@@ -16,47 +16,27 @@ h1 {
   color: #000214;
   font-weight: bolder;
   font-size: 3.5rem;
-  stroke: #ffff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5246dc, 0 0 40px #5246dc,
     0 0 50px #5246dc, 0 0 60px #5246dc, 0 0 70px #5246dc;
 }
 
-/* Consulta de mídia para dispositivos móveis */
-@media (max-width: 768px) {
-  p {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 .content-section {
-  background-image: url('hero1.png'); /* Caminho para sua imagem de fundo */
+  background-image: url('hero1.png');
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .content-section::before {
   content: '';
   position: absolute;
-  top: 650px;
-  left: 500px; /* Ajuste essa propriedade para posicionar o logo conforme necessário */
-  width: 200px; /* Largura do logo */
-  height: 130px; /* Altura do logo */
-  background-image: url('logo-b.png'); /* Caminho para o logo */
+  top: 20px;
+  left: 100px;
+  width: 350px;
+  height: 1px;
+  background-image: url('logo-b.png');
   background-size: cover;
-  z-index: 10; /* Isso garante que o logo fique acima do resto do conteúdo */
-}
-@media (max-width: 768px) {
-  .content-section::before {
-    top: 480px;
-    left: 150px;
-    width: 200px;
-    height: 130px;
-  }
+  z-index: 10;
 }
 
 .custom-button {
@@ -74,6 +54,26 @@ h1 {
   background-color: #fff;
   color: #000214;
   border: 1px solid #000214;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-section {
+    background-image: url('mobile-hero.png');
+    padding-top: 660px;
+  }
+
+  .content-section::before {
+    padding-top: 200px;
+    opacity: 0.2;
+  }
 }
 
 @keyframes brilho {
