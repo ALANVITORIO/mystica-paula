@@ -84,3 +84,21 @@ h1 {
 .titulo-brilhante {
   animation: brilho 5s linear infinite;
 }
+
+@media (max-width: 768px) {
+  .titulo-brilhante {
+    animation: brilho-mobile 3s linear infinite;
+  }
+}
+
+@keyframes brilho-mobile {
+  0%,
+  100% {
+    color: #5246dc;
+    text-shadow: 0 0 5px #fff;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+  }
+}
