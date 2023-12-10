@@ -35,6 +35,12 @@ h1 {
     background-position: center -210px;
   }
 }
+.hero-2 {
+  background-image: url('hero2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
 
 .custom-button {
   background-color: #000214;
@@ -87,18 +93,8 @@ h1 {
 
 @media (max-width: 768px) {
   .titulo-brilhante {
-    animation: brilho-mobile 3s linear infinite;
-  }
-}
-
-@keyframes brilho-mobile {
-  0%,
-  100% {
-    color: #5246dc;
-    text-shadow: 0 0 5px #fff;
-  }
-  50% {
-    color: #fff;
-    text-shadow: 0 0 10px #fff;
+    animation: none;
+    color: #5246dc; /* Cor inicial da animação */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5246dc;
   }
 }
